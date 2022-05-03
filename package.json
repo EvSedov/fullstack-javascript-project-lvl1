@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "first project from hexlet on fullstack javascript developer",
-  "main": "index.js",
+  "main": "./bin/brine-games.js",
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
