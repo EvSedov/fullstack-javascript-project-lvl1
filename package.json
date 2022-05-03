@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "first project from hexlet on fullstack javascript developer",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/EvSedov/fullstack-javascript-project-lvl1.git"
   },
+  "type": "module",
   "author": "Evgeniy Sedov",
   "license": "ISC",
   "bugs": {
