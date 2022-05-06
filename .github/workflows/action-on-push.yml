@@ -1,0 +1,22 @@
+name: action-on-push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+      - uses: actions/checkout@v2
+
+      - name: install nodejs
+      - uses: actions/setup-node@v1
+
+      - name: install packajes
+      - run: npm i
+
+      - name: run eslint
+      - run: make lint
