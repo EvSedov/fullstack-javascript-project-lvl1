@@ -1,17 +1,13 @@
 import readLineSync from 'readline-sync';
 
-const playGame = () => {
+const gameBrainCalc = (name) => {
   const gameQuantity = 3;
   const signs = ['+', '-', '*', '/'];
   let count = 0;
-  let countCorrectAnswer = 0;
   let firstNumber = 0;
   let secondNumber = 0;
   let gameAnswer;
   let userAnswer;
-  console.log('Welcome to the Brain Games!');
-  const name = readLineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?');
   while (count < gameQuantity) {
     firstNumber = Math.floor(Math.random() * 30);
@@ -40,10 +36,8 @@ const playGame = () => {
       return false;
     }
     count += 1;
-    countCorrectAnswer += 1;
   }
-  console.log(`Congratulations, ${name}!`);
   return true;
 };
 
-export default playGame;
+export default gameBrainCalc;

@@ -1,6 +1,6 @@
 import readLineSync from 'readline-sync';
 
-const playGame = () => {
+const gameBrainEven = (name) => {
   const gameQuantity = 3;
   let count = 0;
   let countCorrectAnswer = 0;
@@ -8,9 +8,6 @@ const playGame = () => {
   let gameAnswer;
   let userAnswer;
   let result;
-  console.log('Welcome to the Brain Games!');
-  const name = readLineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   while (count < gameQuantity) {
     numberOfQuestion = Math.floor(Math.random() * 100) || Math.floor(Math.random() * 100);
@@ -25,10 +22,9 @@ const playGame = () => {
     countCorrectAnswer = (result === 'Correct!') ? countCorrectAnswer + 1 : countCorrectAnswer;
   }
   if (countCorrectAnswer === gameQuantity) {
-    console.log(`Congratulations, ${name}!`);
     return true;
   }
   return false;
 };
 
-export default playGame;
+export default gameBrainEven;
