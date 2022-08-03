@@ -11,7 +11,7 @@ export default () => {
   console.log('Welcome to the Brain Games!');
   const userName = readLineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  const nameOfGames = ['brain-even', 'brain-calc'];
+  const nameOfGames = Object.keys(games);
   const indexGameName = readLineSync.keyInSelect(nameOfGames, 'Еnter the number of the game we will play: ');
   if (indexGameName === -1) {
     console.log(`See you soon, ${userName}!`);
