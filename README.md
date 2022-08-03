@@ -6,3 +6,5 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d353bdfd3dc1138fc22e/test_coverage)](https://codeclimate.com/github/EvSedov/fullstack-javascript-project-lvl1/test_coverage)
 
 Step 1: game brain-even - [asciinema](https://asciinema.org/a/U7SjhOXBfqnyaGK0LTBD1ShLa).
+
+Step 2: game brain-calc - [asciinema](https://asciinema.org/a/QqBQp5L9gTqkLzPCHmoWZxE7C).
